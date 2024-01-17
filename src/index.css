@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.scroll-d-none::-webkit-scrollbar {
+@media screen and (min-width: 946px) {
+  .scroll-d-none::-webkit-scrollbar {
     display: none;
+  }
 }
+
 .cards:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 10px rgba(104, 102, 102, 0.1),
-        0 5px 5px rgba(0, 0, 0, 0.12);
-    border-radius: 16px;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 10px rgba(104, 102, 102, 0.1),
+    0 5px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
 }
